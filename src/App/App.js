@@ -1,23 +1,14 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
+
+import getTestWord from '../helpers/data/wordData';
+
+getTestWord.testGetWord().then(console.log);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="btn btn-danger">Bootstrap Button</button>
     </div>
   );
 }
