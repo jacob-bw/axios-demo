@@ -10,7 +10,7 @@ const key = apiKeys.collegeKey;
 const testGetWord = () => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/${testWord}/?key=${key}`)
     .then((response) => {
-      const baseWord = response.data;
+      const baseWord = response.data[0].hwi.hw;
       resolve(baseWord);
     })
     .catch((error) => {

@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.scss';
 
-import getTestWord from '../helpers/data/wordData';
+// import getTestWord from '../helpers/data/wordData';
+import testCall2 from '../helpers/data/wordData2';
 
-getTestWord.testGetWord().then(console.log);
+// getTestWord.testGetWord().then(console.log);
+testCall2.testCall2().then(console.log);
 
 function App() {
   return (
